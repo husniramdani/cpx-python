@@ -15,7 +15,9 @@
 # ░░░░░░PAWANG ULAR░░░░░░
 # ███████████████████████
 
-for i in range(int(input())): #langsung ambil input dan jadikan range
-    word=input() #input string
-    panjang=len(word) #panjang kata
-    print(word if panjang <= 10 else word[0] + str(panjang-2) + word[panjang-1])
+x, y = map(int,input().split()) # input 2 varibale sekaligus
+ans = 0
+while(x <= y):
+    x*=3; y*=2
+    ans += 1
+print(ans)
